@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Study and design of Weld's joints</title>
+    <title>Heat Flow across the weld bead</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/adik.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link href="./css/adiwe2.css" rel="stylesheet">
+  <script src="./js/adiwe2.js"></script>
     
 </head>
 <body>
@@ -33,7 +38,7 @@
 
             </div>
             <div class="col-md-6">
-                <p class="h1"> <b> Study and design of Weld's joints </b> </p>
+                <p class="h1"> <b> Heat Flow across the weld bead </b> </p>
             </div>
             <div class="col-md-3">
 
@@ -42,7 +47,7 @@
         <hr>
         <div class="d-flex p-1 text-primary">
           <div class="p-1" > <p class="h4"><a href="../index.html"> <span class="LN"> <b> Welding Lab </b></span> --> </a></p></div>
-          <div class="p-1"> <p class="h4"><a href="./index.html"> <span class="ExpN"> <b> Study and design of Weld's joints </b> </span> </a></p></div>
+          <div class="p-1"> <p class="h4"><a href="./index.html"> <span class="ExpN"> <b> Heat Flow across the weld bead </b> </span> </a></p></div>
         </div>
     </div>
     
@@ -85,11 +90,7 @@
             <p class="text-center"> <h3 class=" my-5 text-primary"> Instructions: </h3>
               <ol>
                 <li> Before starting the process read the instructions completely</li>
-                <li> Select the type of <b> Weld joint</b></li>
-                <li> Select the <b> sub-type</b> of weld as per the requirement.</li>
-                <li> Select the weld position if required  from <b> (1G,2G,3G,4G)</b> where you want to perform the welding operation.</li>
-                <li> Press <b> Start </b> button to start the simulator.</li>
-                <li> Click on the <b> F </b> button for Front view and <b> Is </b> button for isomatric view</li>
+                
               </ol>
             </p> 
           </div>
@@ -97,108 +98,58 @@
         &nbsp;&nbsp;
       </div>
     </div>
-    <div class="container p-3 my-5 text-left border">
-      <div class="row ">
+    <div class="container p-3 my-5 border">
+      <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10 ">
-          <div id="s1" class="text-center p-3 my-5 border"> 
-            <div class="btn-group btn-group-lg">
-              <button type="button" class="btn btn-primary bg-primary rounded-pill" id="Butt">Butt</button> &nbsp;&nbsp;
-              <button type="button" class="btn btn-primary bg-primary rounded-pill" id="Lap">Lap</button>&nbsp;&nbsp;
-              <button type="button" class="btn btn-primary bg-primary rounded-pill" id="Corner">Corner</button>&nbsp;&nbsp;
-              <button type="button" class="btn btn-primary bg-primary rounded-pill" id="Edge">Edge</button>&nbsp;&nbsp;
-              <button type="button" class="btn btn-primary bg-primary rounded-pill" id="Tee">Tee</button>
-            </div> 
-          </div>&nbsp;
-          <div id="s2" class="p-3 text-left text-white border">
-            <div class="row">
-                <div class="col-md-4 p-3">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="butt" id="brad1">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="brad">
-                      &nbsp; Square &nbsp; </label> <br><br>
-                    <input class="form-check-input" type="radio" name="butt" id="brad2">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="brad">
-                      &nbsp; Bevel &nbsp; </label> <br><br>
-                      <input class="form-check-input" type="radio" name="butt" id="brad3">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="brad">
-                        &nbsp; Double Bevel &nbsp; </label>
+              <ul class="nav nav-pills nav-justified " role="tablist">
+              <li class="nav-item bg-success">
+                  <a class="nav-link" data-bs-toggle="tab" href="#Strt" onclick="$('#inst').hide();"><span class=" h3 text-dark"> Start </span></a>
+              </li> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <li class="nav-item bg-danger">
+                  <a class="nav-link" data-bs-toggle="tab" href="#" onclick="window.location.reload();"><span class=" h3 text-dark"> Stop </span></a>
+              </li>
+              </ul><br>
+              <div class="tab-content"><br>
+                  <div id="Strt" class="container p-3 tab-pane fade "><br>
+                      <div class="row border border-3"><br>
+                          <div class="col-sm-3 p-3 border border-3"><br>
+                              <div class="h3"> <strong> Select Welding Speed : </strong></div><br>
+                              <ul class="nav nav-pills nav-justified " role="tablist"> 
+                                  <div class="col">
+                                      <li class="nav-item nav-link p-3 rounded border border-5"  data-bs-toggle="tab" onclick="adiwe2(1);">
+                                           <span class="h3"> 2 mm/s </span>
+                                      </li><br>
+                                      <li class="nav-item nav-link p-3 rounded border border-5"  data-bs-toggle="tab" onclick="adiwe2(2);">
+                                          <span class="h3"> 4 mm/s </span>
+                                      </li><br> 
+                                  </div>
+                              </ul>
+                          </div>
+                          <div class="col-sm-9 p-3"><br>
+                                 
+                                  <div class="tab-content p-3"><br>
+                                      <div class="col">
+                                          <div id="grph"></div>
+                                      </div><br>
+                                      <div class="col">
+                                          <div class="p-3 border border-3" id="grpt"><br>
+                                                  <p class="h4"> 
+                                                      The Peak value of Temurature 1 is = <span class="text-primary" id="temp1"> </span><br>
+                                                      The Peak value of Temurature 2 is = <span class="text-primary" id="temp2"> </span><br>
+                                                      The Peak value of Temurature 3 is = <span class="text-primary" id="temp3"> </span>
+                                                  </p>
+                                          <br></div>
+                                      </div>
+                                  <br></div><br>
+                              <br> </div>
+                      </div>
                   </div>
-                </div>
-
-                <div class="col-md-4 p-3">
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="butt" id="brad4">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="brad">
-                      &nbsp; &nbsp; V &nbsp; &nbsp; </label> <br><br>
-                    <input class="form-check-input" type="radio" name="butt" id="brad5">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="brad">
-                      &nbsp; Double V &nbsp; </label> <br><br>
-                      <input class="form-check-input" type="radio" name="butt" id="brad6">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="brad">
-                        &nbsp; &nbsp; J &nbsp; &nbsp; </label> <br><br>
-                      <input class="form-check-input" type="radio" name="butt" id="brad7">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="brad">
-                        &nbsp; Double J &nbsp; </label>
-                  </div>
-                </div>
-
-                <div class="col-md-4 p-3">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="butt" id="brad8">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="brad">
-                      &nbsp; &nbsp; U &nbsp; &nbsp; </label> <br><br>
-                    <input class="form-check-input" type="radio" name="butt" id="brad9">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="brad">
-                      &nbsp; Double U &nbsp;  </label> 
-                    
-                  </div>
-                </div>
-            </div> 
-          </div> &nbsp;
-          <div id="s3" class=" p-3 text-white border"> 
-            <div class="row">
-              <div class="col-md-3 p-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="tg" id="brad10">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="tg">
-                    &nbsp; &nbsp; 1G &nbsp; &nbsp; </label> <br>
-                </div>
               </div>
-              <div class="col-md-3 p-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="tg" id="brad11">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="tg">
-                    &nbsp; &nbsp; 2G &nbsp; &nbsp; </label> <br>
-                </div>
-              </div>
-              <div class="col-md-3 p-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="tg" id="brad12">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="tg">
-                    &nbsp; &nbsp; 3G &nbsp; &nbsp; </label> <br>
-                </div>
-              </div>
-              <div class="col-md-3 p-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="tg" id="brad13">&nbsp; <label class="form-check-label bg-primary rounded-pill" for="tg">
-                    &nbsp; &nbsp; 4G &nbsp; &nbsp; </label> <br>
-                </div>
-              </div>
-            </div>
           </div>
-          &nbsp;
-          <div id="pwr"> 
-             
-          </div>          
-          &nbsp;
-          <div id="v1"> 
-             <div class="row border">
-              <div class="col-md-1"></div>
-                <div class="col-md-10">
-                  <div class="row">
-                    Visulaisation area 1
-                  </div>
-                  
-                  <div class="row">
-                  Visulaisation area 2
-                  </div>
-                </div>
-              <div class="col-md-1"></div>
-             </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
       </div>
-    </div>
+
     <div class="container p-3 my-5 text-primary text-center border">
       <div class="row">
         <footer>
