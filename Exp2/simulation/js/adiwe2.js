@@ -15,9 +15,9 @@ function da(fil){
         y3.sort(function(a,b){return a-b;});
         xmax=Math.round(Number(t[t.length-1])+10);
         ymax=Math.round(Math.max(Number(y1[y1.length-1]),Number(y2[y2.length-1]),Number(y3[y3.length-1]))+10);
-        $('#temp1').text(Number(y1[y1.length-1]));
-        $('#temp2').text(Number(y2[y2.length-1]));
-        $('#temp3').text(Number(y3[y3.length-1]));
+        $('#temp1').text(y1[y1.length-1]);
+        $('#temp2').text(y2[y2.length-1]);
+        $('#temp3').text(y3[y3.length-1]);
     });
 Plotly.d3.csv(fil, function(data){ 
     var t = [], y1 = [], y2 = [], y3 = [];
