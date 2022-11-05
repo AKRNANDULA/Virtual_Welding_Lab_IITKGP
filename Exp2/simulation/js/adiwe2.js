@@ -53,7 +53,12 @@ Plotly.d3.csv(fil, function(data){
 
 function grp(gda,xmax,ymax){
     gr = document.getElementById('grph');
-    var layout={title: 'Temperature Vs Time',
+    var layout={title: 'Temperature Vs Time',showlegend: true,
+    legend: {
+      x: 1,
+      xanchor: 'right',
+      y: 1
+    },
     font: {
         family: 'Courier New, monospace',
         size: 15,
