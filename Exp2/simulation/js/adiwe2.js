@@ -5,17 +5,16 @@ function da(fil){
         for (var i=0; i<dat.length; i++) {
             row = dat[i];
             t[i]=Number(row['X_Value']);
-            y1[i]=row['Temperature_0'];
-            y2[i]=row['Temperature_1'];
+            y1[i]=row['Temperature_1'];
+            y2[i]=row['Temperature_0'];
             y3[i]=row['Temperature_2'];
           }
         t.sort(function(a,b){return a-b;});
         y1.sort(function(a,b){return a-b;});
         y2.sort(function(a,b){return a-b;});
         y3.sort(function(a,b){return a-b;});
-        xmax=Math.round(Number(t[t.length-1])+30);
-        ymax=Math.round(Math.max(Number(y1[y1.length-1]),Number(y2[y2.length-1]),Number(y3[y3.length-1]))+30);
-        console.log(y1[y1.length-1]);
+        xmax=Math.round(Number(t[t.length-1])+10);
+        ymax=Math.round(Math.max(Number(y1[y1.length-1]),Number(y2[y2.length-1]),Number(y3[y3.length-1]))+10);
         $('#temp1').text(Number(y1[y1.length-1]));
         $('#temp2').text(Number(y2[y2.length-1]));
         $('#temp3').text(Number(y3[y3.length-1]));
@@ -25,8 +24,8 @@ Plotly.d3.csv(fil, function(data){
     for (var i=0; i<data.length; i++) {
         row = data[i];
         t[i]=Number(row['X_Value']);
-        y1[i]=row['Temperature_0'];
-        y2[i]=row['Temperature_1'];
+        y1[i]=row['Temperature_1'];
+        y2[i]=row['Temperature_0'];
         y3[i]=row['Temperature_2'];
       }
     var g1 = {
@@ -54,10 +53,10 @@ Plotly.d3.csv(fil, function(data){
 
 function grp(gda,xmax,ymax){
     gr = document.getElementById('grph');
-    var layout={title: 'Output Plot',
+    var layout={title: 'Temperature Vs Time',
     font: {
         family: 'Courier New, monospace',
-        size: 23,
+        size: 15,
         color: 'black'
         },
     xaxis: {
@@ -79,7 +78,7 @@ function grp(gda,xmax,ymax){
             xmax
           ] },
     yaxis: {
-        title:'Temprature (deg)',
+        title:'Temprature (<sup>o</sup>C)',
         showticklabels: true,
         autotick: true,
         showgrid: true,
