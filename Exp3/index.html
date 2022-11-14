@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Study and design of Weld's joints</title>
+  <head>
+    <title>Principles of Gas Welding and Gas Cutting Processes</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./css/adik.css" rel="stylesheet">
+  <link href="../css/adik.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-   
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link href="./css/adiwe2.css" rel="stylesheet">
+  <script src="./js/adiwe2.js"></script>
+    
 </head>
 <body>
     <div class="container p-3 my-3 text-primary text-center border">
@@ -32,7 +38,7 @@
 
             </div>
             <div class="col-md-6">
-                <p class="h1"> <b> Study and design of Weld's joints </b> </p>
+                <p class="h1"> <b> Principles of Gas Welding and Gas Cutting Processes </b> </p>
             </div>
             <div class="col-md-3">
 
@@ -40,9 +46,9 @@
         </div>
         <hr>
         <div class="d-flex p-1 text-primary">
-            <div class="p-1" > <p class="h4"><a href="../index.html"> <span class="LN"> <b> Welding Lab </b></span> --> </a></p></div>
-            <div class="p-1"> <p class="h4"><a href="./index.html"> <span class="ExpN"> <b> Study and design of Weld's joints </b> </span> </a></p></div>
-          </div>
+          <div class="p-1" > <p class="h4"><a href="../index.html"> <span class="LN"> <b> Welding Lab </b></span> --> </a></p></div>
+          <div class="p-1"> <p class="h4"><a href="./index.html"> <span class="ExpN"> <b> Principles of Gas Welding and Gas Cutting Processes </b> </span> </a></p></div>
+        </div>
     </div>
     
     <div class="container p-3 my-5 text-primary text-center border">
@@ -50,34 +56,35 @@
 
             <ul class="nav nav-pills nav-justified">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Introduction</a>
+                  <a class="nav-link active" href="./index.html">Introduction</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="aim.html">Objective</a>
+                  <a class="nav-link" href="./aim.html">Objective</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="prequiz.html">Pre Quiz</a>
+                  <a class="nav-link" href="./prequiz.html">Pre Quiz</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="theory.html">Theory</a>
+                  <a class="nav-link" href="./theory.html">Theory</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./procedure.html">Procedure</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./simulation/index.html">Simulation</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="postquiz.html">Post Quiz</a>
+                  <a class="nav-link" href="./postquiz.html">Post Quiz</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="feedback.html">Feedback</a>
+                    <a class="nav-link" href="./feedback.html">Feedback</a>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="references.html">References</a>
+                    <a class="nav-link" href="./references.html">References</a>
                   </li>
 
               </ul>
-
         </div>
-        
     </div>
 
     <div class="container p-3 my-5 text-dark text-left border">
@@ -85,13 +92,14 @@
           <div class="col-md-1"></div>
           <div class="col-md-10">
               <!--- Start your text here  -->
-              <p class="h1"> Introduction:</p>
-              <p>
-                To manufacture different material parts into valuable shapes for various functions (industrial, commercial, residential, art, etc.), the parts must be joined. Different joining procedures, such as mechanical fastening, adhesive joining, and welding are used depending on the material and the application. Metals, the most prevalent engineering material, are frequently joined through different welding methods. This experiment will focus on various joint types depending on the design, types of weld bead , and the various welding symbols. These will be helpful in understanding various welding processes. 
-                <center>
-                  <img class="img-fluid"  src="./images/Tfig1.png" alt="Welding Setup"><br>
-                  <b>Figure 1: Schematic representation of the welding setup </b>
-                </center>
+              <p class="h1 text-primary"> Introduction:</p>
+              <p><br>
+                A heat flow study is essential for welding applications to help us understand the effect of heat on the base material and the welded joint. Heat flow in welding is primarily caused by heat input from the welding source in a limited zone.  The added heat dissipates into the body of the workpiece by conduction. Usually, the heat source melts the workpieces and the filler metal, which solidifies and forms the welded joint. Even after the net energy from the source is transferred to the workpiece as heat, not all of the heat contributes to causing melting to produce the weld. Some are conducted away from the point of deposition, raising the temperature of material surroundings in the zone of fusion and causing unwanted metallurgical and geometrical changes. This surrounding region is called the heat-affected zone. The heat zone is where microstructural changes take place but do not melt it is one of the important aspects of the welded joints.<br><br>
+                An analysis of heat flow and temperature distribution in welding plays a vital role in understanding both the metallurgical and mechanical behavior of welding joints. The rapid cooling rate experienced during welding causes various desired or undesired metallurgical changes. The non-uniform temperature field produced around the weld results in thermal stresses, plastic flow, consequential locked-up residual stresses, and distortion.<br><br>
+                Net heat input (Hnet) during welding is obtained using the following relationship:
+                $$ H_{net} = f\frac{VI}{S} $$
+                where V is arc voltage (V), I welding current (A) and S is welding speed mm/sec, and f is the fraction of heat generated and transferred to the plate.
+
               </p>
           <!--- End of your content here  -->
   
