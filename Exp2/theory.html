@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <link href="./css/adiwe2.css" rel="stylesheet">
   <script src="./js/adiwe2.js"></script>
@@ -92,92 +93,104 @@
         <div class="col-md-1"></div>
           <div class="col-md-10 text-justify">
               <!--- Start your text here  -->
-              <p >
+              <p class="text-justify">
               <h1 class="text-primary"> Theory: </h1><br>
-              <b>Thermal cycle of welding:</b><br><br>
-              Thermal variation - The temperature of the weld varies from the ambient temperature to above the liquidus temperature (possibly to boiling point and above for some very high energy-density processes).
-               The severity of this thermal variation depends on the terms:
-                <ol>
-                <li>Temperature reached by the workpiece.</li>
-                <li>Time required to reach the temperature.</li>
-                <li> Hold time at the temperature.</li>
-                </ol>
-
-               The effects on structure are completely determined by the above-mentioned points, i.e., the thermal variation leads to changes in microstructural characteristics and distortion.
-               To mathematically quantify the thermal cycle, we need temperature distribution in time and space coordinates.<br><br>
-
-               <b>Thermal cycle characterization via thermocouples</b><br><br>
-
-               To find the thermal cycle undergone by a weld bead, an experiment can be performed such that thermocouples are positioned along the weld path at various points. This can be seen schematically in figure 1a
-              
-               The temperature achieved by the thermocouple is plotted, and it is observed that when the heat source moves along the weld path, the temperature rapidly rises to a peak. The peak temperature is held for a very short time, followed by a rapid drop in temperature once the source has passed by the thermocouple. This variation in the temperature can be seen clearly in the graph shown below (figure 1b)
+              <h3> Thermal cycle of welding:</h3>
+<h4> Thermal variation - </h4>
+The temperature of the weld varies from the ambient temperature to greater than the melting point   temperature. Thus there exists a thermal variation across the weld bead.
+ The severity of this thermal variation depends on: <br><br>
+ <ol>
+<li> Temperature reached by the workpiece.</li>
+ <li> Time required to reach the temperature.</li>
+ <li> Hold time at the temperature.</li>
+ </ol>
+ The effect of thermal variation   on the structure is completely determined by the above-mentioned points i.e., the thermal variation leads to changes in microstructural characteristics and distortion.
+ We require the temperature distribution in time and space coordinates in order to mathematically define the thermal cycle. <br><br>
+<h3>Welding thermal cycle by using thermocouples</h3>
+ In order to find the thermal cycle undergone by a weld bead, experiment can be performed such that thermocouples are positioned along the weld path at various points. The thermocouples placed along the weld line in A1, A2, A3, A4, and A5 positions can be seen schematically in Figure 1a.
+The temperature reading by the thermocouple is plotted and it is observed that while the heat source moves along the path of the weld, the temperature rapidly rises to a peak. The peak temperature is held for a very short time, followed by a temperature drop once the heat source passed by the thermocouple. This variation in the temperature can be seen clearly in the graph shown below Figure 1b.
 
                <div class="text-center">
                 <img class="img img-fluid Thimg" src="./images/Fig. 1.png" alt=""><br>
-                  <p class="h5">Figure 1:Graph of Temperature Vs. Time</p>
-                  <h6>
-                  (a) Thermocouple placement along the path of a moving heat source and <br>
-                (b) Thermal cycle produced at each point to generate an overall response </h6>
+                  <p class="h6">Figure 1.(a) Thermocouple placement along the path of a moving heat source and <br>
+                                 1.(b) Thermal cycle produced at each point to generate an overall response. </h6>
                 </p>
                 </div><br>
                 
                 
-               The peak temperature and the rest of the thermal cycle reaches a quasi-steady state shortly after the heat from the source begins to be deposited. <br>&nbsp;<br>
-               
-               <b class="h5">Quasi-steady state</b> means a rate of energy input is balanced with the rate of energy loss or dissipation.
+                The maximum temperature and the remaining thermal cycle reach a quasi-steady state shortly following the start of heat deposition from the source. This is shown by the red curve joining the peak temperature for all thermocouples. <br><br>
 
-               In a quasi-steady state, isotherms of temperature surrounding a moving heat source remain constant and appear to move with the heat source (away from edges). The isotherms follow an elliptical shape when observed from the top, as shown in figure 2.<br><br>
+               
+               <b class="h5">Quasi-steady state</b> is a state in which the rate of heat generated is balanced by the rate of heat dissipated. When a heat source is moving, the temperature isotherms surrounding it remain constant and appear to move with it (away from edges). The isotherms follow an elliptical shape when observed from the top, as can be seen in Figure 2.
+             <br><br>
 
                <div class="text-center">
-                <img class="img img-fluid Thimg" src="./images/Fig. 2.png" alt=""><br>
-                  <p class="h5">Figure 2. Schematic showing the establishment of quasi-steady state condition in   weld made by moving a heat source after the passage of some time.</p>
+                <img class="img img-fluid Thimg" src="./images/Fig. 2.png" alt="">
+                  <p class="h6">Figure 2. Diagram illustrating the development of a quasi-steady state condition in a <br>moved heat source weld over the course of some time. </p>
                 </p>
                 </div>
                 
-               <b>Time-Temperature curves</b><br><br>
+               <b class="h4">Time-Temperature curves</b><br><br>
+               Time-Temperature curves can be achieved by placing thermocouples at   various equidistant points perpendicular to the direction of weld. The positions of the thermocouple are denoted by points P, Q, R as can be seen in Figure 3. While performing the experiment, as the heat source moves along the weld line, thermocouples will record temperature at each point with respect to time, thus obtaining Time-Temperature curves as shown in Figure 3. <br><br>
+               The following observations can be seen from the Time-Temperature curves.<br><br>
                <ul>
-               <li>With increasing distance from the heat source, the peak temperature decreases.</li>
-               <li>The maximum temperatures reached (mP, mQ, mR) decrease with distance from the weld line and occur at increasing times (TmP, TmQ, TmR). The peak temperature, P, can then be plotted as a function of time.</li>
-               <li>Peak temperature distinguishes the heating portion of the welding thermal cycle from the cooling portion.  At a certain time interval, when points closest to a weld begin cooling, points further away continue to heat. This phenomenon explains certain aspects of heat-affected zone phase transformations, differential rates of thermal expansion/contraction that lead to thermally induced stresses, and possibly distortion.</li>
-              </ul>
+                <li> Peak temperature will decrease by increasing the distance from the heat source.</li>
+                <li>The highest temperatures reached (θmP, θmQ, θmR) decreases with increasing distance from the weld centre line as a function of time (TmP, TmQ, TmR). Plotting the peak temperature θmP as a function of time is shown in Fig.3.</li>
+                <li>The maximum temperature separates the heating phase from the cooling phase of the welding thermal cycle.  At a certain interval of time, when points near the weld start cooling, points more distant continue to heat. This occurrence describes certain features of heat-affected zone transformation of phases, differential rate of thermal expansion and contraction which will carry to distortion and thermal stresses.</li>
+               </ul>
+             
+             
 
               <div class="text-center">
                 <img class="img img-fluid Thimg" src="./images/Fig. 3.png" alt=""><br>
-                  <p class="h5">Figure 3. Temperature-Time curves for three points of a moving weld heat source.</p>
+                  <p class="h6">Figure 3. Temperature-Time curves for three points of a moving weld heat source.</p>
                 </p>
                 </div>
 
-               <b>Spatial isotherms</b><br><br>
-               Peak temperature separates the heating & cooling zone.<br><br>
+               <b  class="h4">Spatial isotherms</b><br><br>
+               Peak temperature separates the heating & cooling zone. Peak temperature will determine the cooling rate. Points closer to peak temperature will cool fast and the points further away from the peak temperature will cool slow. Peak temperature is very important for metallurgical changes in the material.
 
                <div class="text-center">
                 <img class="img img-fluid Thimg" src="./images/Fig. 4.png" alt=""><br>
-                  <p class="h5">Figure 4. Temperature isotherms near the weld zone.
+                  <p class="h6">Figure 4. Temperature isotherms near the weld zone.
                   </p>
                 </p>
                 </div>
 
 
-               <b>The generalized heat flow equation:</b><br><br>
-               An elaborate theoretical analysis of heat flow in welding is carried out using the basic heat flow equation by conducting three dimensions. It was originally observed by Rosenthal that the nature of the temperature field in arc welding is quasi-stationary. It means that although the temperature at a point on the plate changes with time, if we consider the temperature isotherms remain stationary, i.e., the shape of the temperature field around the arc will be the same whatever its position be. This aspect is shown in figure 1. The theoretical analysis involves rewriting this equation of heat conduction in a moving coordinate system with the arc center as the origin. Suitable boundary conditions for cases of thin or thick plates are imposed, and a solution is obtained. Temperature does not vary along the thickness for thin plates, i.e., it is two-dimensional distribution, while it varies along the thickness in the case of thick plates. However, at points somewhat away from the arc, the temperature field becomes two-dimensional, even for moderately thick plates.<br>
+               <b  class="h4">The generalized heat flow equation:</b><br><br>
+               An elaborate theoretical analysis of heat flow in welding is carried out using the basic equation of heat flow by conduction in three dimensions. It was originally observed by Rosenthal that the nature of the temperature field in arc welding is quasi-stationary. It means that although the temperature at a point on the plate is changing with time if we consider the temperature isotherms remain stationary i.e., the shape of the temperature field around the arc will be the same whatever its position be. This aspect is shown in Figure 2. The theoretical analysis involves rewriting this equation of heat conduction in a moving coordinate system with the arc centre as the origin. Suitable boundary conditions for cases of thin or thick plates are imposed and a solution is obtained. Temperature does not vary along the thickness for thin plates i.e., it is two-dimensional distribution while it varies along the thickness in the case of thick plates. However, at points somewhat away from the arc, the temperature field becomes two-dimensional even for moderately thick plates. <br><br>
+                Temperature distribution along a section parallel to the weld shows a steep rise in the beginning and then gradual cooling. The peak temperature which is attained at a particular section plays an important role in deciding whether there will be metallurgical microstructural changes along this section (i.e., the size of the head affected). This information is useful in the calculation of residual stresses and distortion.<br><br>
+                For two-dimensional case, the peak temperature over a particular transverse section is given by the above analysis by using simplified Rosenthal's equation,<br><br>
+                $$ \frac{1}{T_p-T_o}=\frac{4.132*C*\rho *t*x}{H_{net}}+\frac{1}{T_m-T_o} $$ <br><br>
 
-               Temperature distribution along a section parallel to the weld shows a steep rise in the beginning and then gradual cooling. The peak temperature which is attained at a particular section plays an important role in deciding whether there will be metallurgical microstructural changes along this section (i.e., the size of the head affected). This information is useful in the calculation of residual stresses and distortion.<br><br>
-               For two dimensional case, the peak temperature over a particular transverse section is given by the above analysis by using the simplified Rosenthal's  equation,<br>
 
-                $$\frac{1}{Tp-To}=\frac{\sqrt{2 \pi e} \rho C h y}{H_{net}} + \frac{1}{Tm-To}$$<br>
 
-              Where<br>
-              Tp =    Peak temperature (K)<br>
-              To =    Initial weldment of the temperature (K)<br>
-              e  =    base of natural logarithms = 2.718<br>
-              &rho;=    density of the base material (g/mm^3)<br>
-               C =    specific heat of the base material (J/g K^-1)<br>
-               h =    thickness of the base material (mm)<br>
-               y =    0 at the fusion zone boundary and where Tp=Tm <br>
-              Tm =    Melting temperature of the material being welded (K)<br>
-              $$ H_{net} = \frac{q}{v} $$<br>
-              Where,  q = heat or energy (J/s)<br>
-              &upsilon; = Welding speed (m/s)<br>
+ Where,<br>
+\( T_p \) =    Peak temperature (K) <br>
+\( T_o \)=    Ambient temperature of the workpiece (K) <br>
+\(  \rho \) =    density of the workpiece (g/mm<sup>3</sup>) <br>
+\( C  \) =    specific heat of the workpiece (J/g K <sup>-1</sup>) <br>
+\( t   \)  =    workpiece thickness (mm) <br>
+\( x   \) =    distance from weld centre line (mm) <br>
+\( T_m \)=    Melting temperature of the workpiece (K) <br>
+\( H_{net}  =   \frac{q}{v} \) in (J/m) <br>  <br>
+Where, <br>  \( q \)= heat or energy (J/s) <br>
+\( v \)= Welding speed (m/s) <br> <br>
+
+Peak temperature can be calculated by the above equation and the peak temperature distribution throughout the weld-centre line governs
+<ol>
+<li> Weld pool shape.</li>
+<li> Heat affected zone size.</li>
+<li> Type of metallurgical transformation.</li>
+<li> Mechanical properties of weld and HAZ.</li>
+</ol>
+Thus it is very important to understand the heat flow in welding and peak temperature distribution in welding.
+
+
+
+
+
 
 
 
