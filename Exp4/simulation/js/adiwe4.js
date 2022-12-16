@@ -165,7 +165,7 @@ var g6 = {
 var gda = [g1,g2,g3,g4,g5,g6];
 
     var gr = document.getElementById('grph');
-    var layout={title: 'Temperature Vs Time',showlegend: true,
+    var layout={title: 'Principles of Shielded Metal Arc Welding',showlegend: true,
     legend: {
       x: 1,
       xanchor: 'right',
@@ -177,7 +177,7 @@ var gda = [g1,g2,g3,g4,g5,g6];
         color: 'black'
         },
     xaxis: {
-        title:'Time (s)',
+        title:'X axis -->',
         showticklabels: true,
         autotick: true,
         showgrid: true,
@@ -193,7 +193,7 @@ var gda = [g1,g2,g3,g4,g5,g6];
         range:[10,70]
          },
     yaxis: {
-        title:'Temprature (<sup>o</sup>C)',
+        title:'Y axis -->',
         showticklabels: true,
         autotick: true,
         showgrid: true,
