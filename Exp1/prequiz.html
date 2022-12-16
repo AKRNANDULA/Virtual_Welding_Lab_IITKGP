@@ -1,3 +1,11 @@
+<!--
+ This HTML file is developed by
+Aditya Kameswara Rao Nandula
+Senior Project Scientist,
+Virtual Labs IIT Kharagpur.
+LinkedIn: https://in.linkedin.com/in/akraonandula/
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +15,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="./css/adik.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/adiprq.js"></script>
 
-    
 </head>
 <body>
-    <div class="container p-3 my-3 text-primary text-center border">
-        <div class="row">
+    <div class="container p-3 my-3 border">
+        <div class="row text-primary text-center">
             <div class="col-md-3">
                 <img class="img-fluid rounded" src="./images/vlabs.png" alt="VLabs logo">
             </div>
@@ -28,7 +37,7 @@
         </div>
     
         <hr>
-        <div class="row">
+        <div class="row text-primary text-center">
             <div class="col-md-3">
 
             </div>
@@ -82,16 +91,19 @@
         </div>
         
     </div>
-    <div class="container p-3 my-5 text-primary text-center border">
+    <div class="container p-3 my-5 border">
       <div class="row">
         
         <div class="col-md-1"></div>
         <div class="col-md-10"></div>
         <!--              Your code start here          -->
         
-        <div class="" id="prqiz">
-          
-        </div>
+        <div id="prequiz"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center"> <button type="button" class="btn btn-success" onclick="cas();"> Submit</button> </div>
+            <div class="col-md-6 text-center"> <button type="button" class="btn btn-danger" onclick="window.location.reload();"> Reset </button> </div>
+          </div>
 
         <!--               Your code end here           -->
         <div class="col-md-1"></div>

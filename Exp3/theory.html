@@ -1,3 +1,11 @@
+<!--
+ This HTML file is developed by
+Aditya Kameswara Rao Nandula
+Senior Project Scientist,
+Virtual Labs IIT Kharagpur.
+LinkedIn: https://in.linkedin.com/in/akraonandula/
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,12 +17,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/adik.css" rel="stylesheet">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <link href="./css/adiwe2.css" rel="stylesheet">
   <script src="./js/adiwe2.js"></script>
     
 </head>
@@ -38,7 +46,7 @@
 
             </div>
             <div class="col-md-6">
-                <p class="h1"> <b>Principles of Gas Welding and Gas Cutting Processes </b> </p>
+                <p class="h1"> <b> Principles of Gas Welding and Gas Cutting Processes </b> </p>
             </div>
             <div class="col-md-3">
 
@@ -47,7 +55,7 @@
         <hr>
         <div class="d-flex p-1 text-primary">
           <div class="p-1" > <p class="h4"><a href="../index.html"> <span class="LN"> <b> Welding Lab </b></span> --> </a></p></div>
-          <div class="p-1"> <p class="h4"><a href="./index.html"> <span class="ExpN"> <b> Principles of Gas Welding and Gas Cutting Processes</b> </span> </a></p></div>
+          <div class="p-1"> <p class="h4"><a href="./index.html"> <span class="ExpN"> <b> Principles of Gas Welding and Gas Cutting Processes </b> </span> </a></p></div>
         </div>
     </div>
     
@@ -65,7 +73,7 @@
                   <a class="nav-link" href="./prequiz.html">Pre Quiz</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="./theory.html">Theory</a>
+                  <a class="nav-link  active" href="./theory.html">Theory</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./procedure.html">Procedure</a>
@@ -88,108 +96,163 @@
     </div>
 
     <div class="container p-3 my-5 text-dark text-left border">
-      <div class="row">
-        <div class="col-md-1"></div>
-          <div class="col-md-10 text-justify">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
               <!--- Start your text here  -->
-              <p >
-              <h1 class="text-primary"> Theory: </h1><br>
-              <b>Thermal cycle of welding:</b><br><br>
-              Thermal variation - The temperature of the weld varies from the ambient temperature to above the liquidus temperature (possibly to boiling point and above for some very high energy-density processes).
-               The severity of this thermal variation depends on the terms:
+              <div class="h1 text-primary"> Theory: </div><br>
+              <p>
+                <ul>
+                  <li class="h3 text-primary"> Gas welding </li><br>
+                  Oxy-fuel welding, popularly known as "Gas Welding," is a heat-generating method that uses the combustion of oxygen and fuel. When properly proportioned inside a hand-held torch or blowpipe, a flame that is extremely hot measuring approximately 3200°C is produced. Many gas combinations are utilized in oxy-fuel welding; however, an oxygen-acetylene mixture is the most common. By altering the volume ratio of oxygen to acetylene via the torch or blowpipe nozzles, the oxyacetylene flame's chemical reaction can be adjusted. <br>
+                  The schematic diagram of the parts of a gas welding setup is shown in Fig. 1 below.
+                  <center>
+                    <img class="img img-fluid" src="./images/Fig.2.png" alt="">
+                    <strong><i>Fig.1.  Gas welding process</i></strong>
+                  </center>
+                <li class="h3 text-primary">Gas cutting </li><br>
+                    The oxy-fuel process of cutting is entirely different from welding. In oxygen-fuel cutting, metal is heated to a red-hot temperature using an oxy-acetylene flame. This is followed by a delivery of a jet of pure oxygen that undergoes an exothermic reaction by oxidation to melt the metal and form the cut. Since oxidation is used to achieve this, only metals that readily oxidize at a high temperature can undergo such oxy-fuel cutting. These metals include low alloy steel and mild steel. Fig.2 below shows the schematic of the gas-cutting process.
+                    <center>
+                        <img class="img img-fluid" src="./images/Fig.3.png" alt="">
+                        <strong><i>Fig.2.  Gas welding process</i></strong>
+                      </center>
+                </ul>
+                <span class="h3 text-primary">Gas welding process chemistry:</span><br><br>
+                \( C_2H_2 \) is the most commonly used welding fuel. It dissociates in the presence of oxygen in the first step of the two-stage process, releasing hydrogen gas, carbon monoxide, and heat.
+
+                $$ O_2 + C_2H_2 = H_2 + 2CO + Heat $$
+
+                Following that, Carbon monoxide, hydrogen, and more oxygen mix in a secondary process to create water vapour and CO2.
+                
+                $$ 2CO + H_2 + 1.5O_2 = H_2O + 2CO_2 + Heat $$ 
+
+                Combining equations (i) and (ii) shows that one part of acetylene requires roughly two and a half parts of oxygen to be used.
+                
+                $$ 2.5O_2 + C_2H_2 = H_2O + 2CO_2 + Heat $$
+                
+                A welder can produce any desired flame condition and temperature by adjusting the relative proportions of acetylene and oxygen. <br><br>
+
+                <span class="h3 text-primary">Different Welding Gases.</span><br> <br>
+                Industrial fuel gases have the need for oxygen to enable combustion. A fuel gas must have the following properties when burned with oxygen in order to be suitable for welding operations. <br> <br>
+                <ul>
+                    <li>high-temperature flame </li>
+                    <li>greater heat propagation rate</li>
+                    <li>sufficient content of heat</li>
+                </ul>
+                Acetylene most closely satisfies all of the above criteria amid the readily available fuel gases in industry, including \( C_3 H_8 \), hydrogen, natural gas, propylene, liquefied petroleum gas (LPG) hydrogen, and MAPP gas.
+                <br><br>
+                <span class="h3 text-primary">Acetylene Characteristics:</span> <br><br>
                 <ol>
-                <li>Temperature reached by the workpiece.</li>
-                <li>Time required to reach the temperature.</li>
-                <li> Hold time at the temperature.</li>
+                    <li>A fundamental ignition region and a subsidiary ignition region are the two stages in which hydrocarbons burn (envelope flame). </li>
+                    <li>When mixed with oxygen, the colourless gas acetylene produces an extremely combustible mixture.</li>
+                    <li>A combination of calcium carbide and water produces acetylene gas, which has the chemical formula C2H2 and is made up of carbon and hydrogen.</li>
                 </ol>
+                The other two cutting and joining gases are  <br><br>
+                <ul><li>Hydrogen</li> <li>MAPP</li></ul>
+                <span class="h4 text-primary">MAPP</span> is a blend of methylacetylene-propadiene and LPG (acetylene and propane). MAPP gas can be used in high-volume acetylene cutting torches capable of cutting steel up to 12 inches thick, at pressures which are substantially greater than those of acetylene, frequently reaching pressures of 40 or 50 psi. <br><br>
 
-               The effects on structure are completely determined by the above-mentioned points, i.e., the thermal variation leads to changes in microstructural characteristics and distortion.
-               To mathematically quantify the thermal cycle, we need temperature distribution in time and space coordinates.<br><br>
+                <span class="h4 text-primary">Hydrogen generates</span> low-temperature flames and is compatible with aluminium. Since non-luminous hydrogen flames may be utilized at higher pressures than acetylene, they are widely used for underwater welding.<br><br>
+                Gases that are good for cutting yet inappropriate for welding are as follows: <br><br>
+                <ul>
+                    <li>Methane</li><li>Propane</li><li>Liquified Petroleum Gas</li>
+                </ul>
+                Due to their oxidizing properties, hydrocarbon gases, including propane, natural gas, butane, municipal gas, and others, are not suitable for welding iron or steel. <br><br>
+                <span class="h3 text-primary">Gas Welding Equipment:</span><br><br>
+                <ol>
+                    <li><span class="h4 text-primary">Oxygen cylinder:</span> It is a hollow, closed cylinder that can withstand extremely high pressures,  and it is attached to a safety valve and regulator. Steel cylinders with capacities ranging from 2.25 to 6.3 m3 are used. At 21°C, the cylinders are filled with oxygen at a density of roughly 150 kg/cm2. The knob that operates the valve can open or close the cylinder. To secure the nozzle, a protective cover is provided on the cylinder's top. Fig. 3 below shows a schematic of an oxygen cylinder. <br><br>
+                    </li>
+                    <div class="row">
+                    <div class="col-md-5" >
+                    <center>
+                        <img class="img img-fluid" src="./images/Fig.4a.png" alt="">
+                        <strong><i>Fig.3a. Oxygen cylinder </i></strong>
+                      </center><br>
+                    </div>
+                    <div class="col-md-7">
+                        <center>
+                            <img class="img img-fluid" src="./images/Fig.4b.png" alt="">
+                            <strong><i> Fig.3b. Cross-section of an oxygen cylinder</i></strong>
+                          </center><br>
+                        </div>
+                    </div>
+                    <li><span class="h4 text-primary">Acetylene cylinder:</span> Steel is used to make acetylene cylinders as well. At a pressure of 18 to 20 kg/cm2, gas is filled. The cylinder has a capacity of around 10m3. The safety valve and regulator valve are mounted on the cylinder. Since acetylene is relatively unstable when compressed in free space, the cylinder is not hollow. The cylinder contains porous material that has been saturated with liquid acetone (in a similar manner to a sponge absorbing water). Acetylene gas is injected into the cylinder, where it is absorbed by the soluble acetone (acetone can absorb acetylene many times its volume). Fig. 4a and 4b below shows the schematic representation of the acetylene cylinder and its cross-section.</li>
 
-               <b>Thermal cycle characterization via thermocouples</b><br><br>
+                    <div class="row">
+                        <div class="col-md-6" >
+                        <center>
+                            <img class="img img-fluid" src="./images/Fig.5a.png" alt="">
+                            <strong><i>Fig.4a. Acetylene cylinder</i></strong>
+                          </center>
+                        </div>
+                        <div class="col-md-6">
+                            <center>
+                                <img class="img img-fluid" src="./images/Fig.5b.png" alt="">
+                                <strong><i>Fig.4b. Cross-section of an acetylene cylinder</i></strong>
+                              </center>
+                            </div>
+                        </div><br>
+                    <li><span class="h4 text-primary">Gas welding torch:</span> Welding is done with a welding torch. It is identified by the presence of only one or two pipes leading to the nozzle and the operator can regulate the flow of oxygen and fuel using the two valve controls located at the handle's base, respectively. Fig.5 below shows the simplified construction of a welding torch.</li>
 
-               To find the thermal cycle undergone by a weld bead, an experiment can be performed such that thermocouples are positioned along the weld path at various points. This can be seen schematically in figure 1a
-              
-               The temperature achieved by the thermocouple is plotted, and it is observed that when the heat source moves along the weld path, the temperature rapidly rises to a peak. The peak temperature is held for a very short time, followed by a rapid drop in temperature once the source has passed by the thermocouple. This variation in the temperature can be seen clearly in the graph shown below (figure 1b)
+                        <center>
+                        <img class="img img-fluid" src="./images/Fig.6.png" alt="">
+                        <strong><i>Fig.5. Gas welding torch construction</i></strong>
+                      </center><br>
+                    <li><span class="h4 text-primary">Gas-cutting torch: </span> Fig.6 below shows a longitudinal cross-section of a gas-cutting torch. A jet of oxygen that cuts the metal emerges through a wider centre aperture in the cutting torch's tip. The oxygen-acetylene mixture needed for pre-heating is supplied through a collection of orifices that surround the centre aperture. Two high-pressure valves that control oxygen and acetylene flow to provide a neutral preheating flame is included with the cutting torch. After preheating, a mechanical lever is pulled to release a high-pressure oxygen jet from the central aperture. The diameter of the central aperture of the gas-cutting torch varies with the variation of the thickness of the workpiece.</li>
+                        <center>
+                            <img class="img img-fluid" src="./images/Fig.7.png" alt=""><br>
+                            <strong><i>Fig.6. Gas-cutting torch cross-sectional view</i></strong>
+                          </center><br>
+                </ol>
+                <span class="h2 text-primary"> Types of Gas Flames </span>
+                <ul>
+                    <li><span class="h4 text-primary"> Oxidizing Flame:</span> An oxidizing flame is formed when the amount of oxygen gas in the torch is greater than the amount of acetylene (ratio of around 2:1) that has been added. The oxidizing flame is divided into two zones: the inner zone, which is very bright white and has a temperature of around 3300°C, and the blue outer zone of lower temperature. This flame is used to cut and weld metals that are not much affected by oxidation, including brass, copper, bronze alloys, etc. Fig.7 below is a schematic representation of an oxidizing flame. </li>
+                    <center>
+                        <img class="img img-fluid" src="./images/Fig.8.png" alt=""><br>
+                        <strong><i>Fig.7. Oxidizing flame representation</i></strong>
+                      </center><br>
+                        
+                    <li><span class="h4 text-primary"> Carburizing Flame:</span> A carburizing flame forms when there is more acetylene in the mixture than oxygen (the ratio of around 2:1). This flame has three zones, a bright luminous inner zone, an intermediate acetylene feather, and an outer blue envelope. This flame is used to weld metals like Nickel alloys and Monel.Fig.8 below shows the schematic representation of carburizing flame.</li>
 
-               <div class="text-center">
-                <img class="img img-fluid Thimg" src="./images/Fig. 1.png" alt=""><br>
-                  <p class="h5">Figure 1:Graph of Temperature Vs. Time</p>
-                  <h6>
-                  (a) Thermocouple placement along the path of a moving heat source and <br>
-                (b) Thermal cycle produced at each point to generate an overall response </h6>
-                </p>
-                </div><br>
+                    <center>
+                        <img class="img img-fluid" src="./images/Fig.7.png" alt="">
+                        <strong><i>Fig.8. Carburizing flame representation</i></strong>
+                      </center><br>
+                    
+                    <li><span class="h4 text-primary"> Neutral flame:</span> It is characterized as a balanced flame. Equal parts of the gases oxygen and acetylene (1:1 ratio) are combined. It is divided into two structural zones: the outer enclosure and the inner cone. It features a well-defined inner cone signifying complete combustion. The outer envelope of a neutral flame is wider as compared to the small and narrow outer envelope of oxidizing flame. A neutral flame is the most commonly used flame type, typically used for welding steel, cast iron, and other metals. Fig.9 below shows the schematic of the neutral flame.</li>
+                    <center>
+                        <img class="img img-fluid" src="./images/Fig.8.png" alt=""><br>
+                        <strong><i>Fig.9. Neutral flame representation</i></strong>
+                      </center><br>
+                    
+                </ul>
+                <span class="h2 text-primary"> Applications: </span><br><br>
+                Sheet metal work makes extensive use of oxy-acetylene welding. With the correct filler metals, all metals can be welded. For cutting application only the cutting torch, replaces the welding torch, rest all the equipment are the same.<br><br>
                 
+                <span class="h2 text-primary"> Advantages: </span><br><br>
+                <ol>
+                    <li>When compared to other welding processes, the equipment is less expensive.</li>
+                    <li>It is suitable for the welding of all metals.</li>
+                    <li>Equipment maintenance is simple.</li>
+                    <li>It can be used to cut thin metals.</li>
+                    <li>It can be easily carried to remote places.</li>
+                </ol>
                 
-               The peak temperature and the rest of the thermal cycle reaches a quasi-steady state shortly after the heat from the source begins to be deposited. <br>&nbsp;<br>
-               
-               <b class="h5">Quasi-steady state</b> means a rate of energy input is balanced with the rate of energy loss or dissipation.
+                <span class="h2 text-primary"> Disadvantages:</span><br><br>
+                <ol>
+                    <li>Compared to arc welding, it takes a substantial amount of time to heat the job.</li>
+                    <li>This process may lead to brittleness and prone to corrosion.</li>
+                    <li>Gases are expensive and complicated to store.</li>
+                </ol>
+            
+              </p>
 
-               In a quasi-steady state, isotherms of temperature surrounding a moving heat source remain constant and appear to move with the heat source (away from edges). The isotherms follow an elliptical shape when observed from the top, as shown in figure 2.<br><br>
-
-               <div class="text-center">
-                <img class="img img-fluid Thimg" src="./images/Fig. 2.png" alt=""><br>
-                  <p class="h5">Figure 2. Schematic showing the establishment of quasi-steady state condition in   weld made by moving a heat source after the passage of some time.</p>
-                </p>
-                </div>
-                
-               <b>Time-Temperature curves</b><br><br>
-               <ul>
-               <li>With increasing distance from the heat source, the peak temperature decreases.</li>
-               <li>The maximum temperatures reached (mP, mQ, mR) decrease with distance from the weld line and occur at increasing times (TmP, TmQ, TmR). The peak temperature, P, can then be plotted as a function of time.</li>
-               <li>Peak temperature distinguishes the heating portion of the welding thermal cycle from the cooling portion.  At a certain time interval, when points closest to a weld begin cooling, points further away continue to heat. This phenomenon explains certain aspects of heat-affected zone phase transformations, differential rates of thermal expansion/contraction that lead to thermally induced stresses, and possibly distortion.</li>
-              </ul>
-
-              <div class="text-center">
-                <img class="img img-fluid Thimg" src="./images/Fig. 3.png" alt=""><br>
-                  <p class="h5">Figure 3. Temperature-Time curves for three points of a moving weld heat source.</p>
-                </p>
-                </div>
-
-               <b>Spatial isotherms</b><br><br>
-               Peak temperature separates the heating & cooling zone.<br><br>
-
-               <div class="text-center">
-                <img class="img img-fluid Thimg" src="./images/Fig. 4.png" alt=""><br>
-                  <p class="h5">Figure 4. Temperature isotherms near the weld zone.
-                  </p>
-                </p>
-                </div>
-
-
-               <b>The generalized heat flow equation:</b><br><br>
-               An elaborate theoretical analysis of heat flow in welding is carried out using the basic heat flow equation by conducting three dimensions. It was originally observed by Rosenthal that the nature of the temperature field in arc welding is quasi-stationary. It means that although the temperature at a point on the plate changes with time, if we consider the temperature isotherms remain stationary, i.e., the shape of the temperature field around the arc will be the same whatever its position be. This aspect is shown in figure 1. The theoretical analysis involves rewriting this equation of heat conduction in a moving coordinate system with the arc center as the origin. Suitable boundary conditions for cases of thin or thick plates are imposed, and a solution is obtained. Temperature does not vary along the thickness for thin plates, i.e., it is two-dimensional distribution, while it varies along the thickness in the case of thick plates. However, at points somewhat away from the arc, the temperature field becomes two-dimensional, even for moderately thick plates.<br>
-
-               Temperature distribution along a section parallel to the weld shows a steep rise in the beginning and then gradual cooling. The peak temperature which is attained at a particular section plays an important role in deciding whether there will be metallurgical microstructural changes along this section (i.e., the size of the head affected). This information is useful in the calculation of residual stresses and distortion.<br><br>
-               For two dimensional case, the peak temperature over a particular transverse section is given by the above analysis by using the simplified Rosenthal's  equation,<br>
-
-                $$\frac{1}{Tp-To}=\frac{\sqrt{2 \pi e} \rho C h y}{H_{net}} + \frac{1}{Tm-To}$$<br>
-
-              Where<br>
-              Tp =    Peak temperature (K)<br>
-              To =    Initial weldment of the temperature (K)<br>
-              e  =    base of natural logarithms = 2.718<br>
-              &rho;=    density of the base material (g/mm^3)<br>
-               C =    specific heat of the base material (J/g K^-1)<br>
-               h =    thickness of the base material (mm)<br>
-               y =    0 at the fusion zone boundary and where Tp=Tm <br>
-              Tm =    Melting temperature of the material being welded (K)<br>
-              $$ H_{net} = \frac{q}{v} $$<br>
-              Where,  q = heat or energy (J/s)<br>
-              &upsilon; = Welding speed (m/s)<br>
-
-
-
-
-      <!--- End of your content here  -->
-     </div>
-        <div class="col-md-1"></div>
-        
-      </div>
+              <!--- End of your content here  -->
+  
+          </div>
+          <div class="col-md-1"></div>
+          
+        </div>
     </div>
-
-
     <div class="container p-3 my-5 text-primary text-center border">
       <div class="row">
         <footer>

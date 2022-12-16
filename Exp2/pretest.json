@@ -1,0 +1,81 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Heat flow in welding affects which properties",
+      "answers": {
+        "a": "Metallurgical properties",
+        "b": "Mechanical properties",
+        "c": "Both a & b",
+        "d": "None of the Above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The non-uniform temperature field produced around the weld zone results in Thermal stresses, distortion",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following material has the highest thermal conductivity?",
+      "answers": {
+        "a": "Copper",
+        "b": "Brass",
+        "c": "Steel",
+        "d": "Aluminium"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },    
+    {
+      "question": "With increasing in time the peak temperature from the weld centre line will",
+      "answers": {
+        "a": "Increase",
+        "b": "Decrease"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },    {
+      "question": "Heat input in welding depends on",
+      "answers": {
+        "a": "Current",
+        "b": "Voltage",
+        "c": "Welding speed",
+        "d": "All  of the Above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+]
+}

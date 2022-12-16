@@ -1,3 +1,10 @@
+/**
+ This Scrtpt file is developed by
+Aditya Kameswara Rao Nandula
+Senior Project Scientist,
+Virtual Labs IIT Kharagpur.
+LinkedIn: https://in.linkedin.com/in/akraonandula/
+ */
 function da(fil){
     var ymax=0,xmax=0;
     Plotly.d3.csv(fil, function(dat){ 
@@ -102,7 +109,7 @@ function grp(gda,xmax,ymax){
           ] }
     };
     Plotly.newPlot(gr, gda, layout);
-}
+};
 
 $(document).ready(function(){
     adiwe2(0);

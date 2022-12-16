@@ -1,0 +1,102 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Calculate the heat input for the following parameters <br> Voltage = 24V <br> Current = 100A <br> Welding speed = 2 mm/sec ",
+      "answers": {
+        "a": "1400J/mm",
+        "b": "1200J/mm",
+        "c": "1000J/mm",
+        "d": "1600J/mm"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Heat flow will be more into the welding workpiece by",
+      "answers": {
+        "a": "Conduction",
+        "b": "Convection",
+        "c": "Radiation",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "The rate of cooling (cooling slope) is maximum for the point closest to the weld line and decreases with distance from the weld line?",
+      "answers": {
+        "a": "True",
+        "b": "False"
+       
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Calculate the heat input for welding <br> Consider <br> Voltage = 14V <br> Current =140A <br> \\( \\eta \\)=70% <br> Welding speed =4mm/s",
+      "answers": {
+        "a": "350J/mm",
+        "b": "380J/mm",
+        "c": "343J/mm",
+        "d": "390J/mm"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+{
+      "question": "With increase in perpendicular distance of a point away from the weld centre- line, the peak temperature will",
+      "answers": {
+        "a": "Increase",
+        "b": "Decrease",
+        "c": "Remain same"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Weld thermal cycle depends on which of the following parameters",
+      "answers": {
+        "a": "Heat input rate",
+        "b": "Weldment geometry",
+        "c": "Thermal properties of base metal",
+        "d": "All of the above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Thermal stresses in welding are caused by differential thermal expansion and contraction",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Calculate the peak temperature of mild steel for the following parameters <br> Consider <br> t= 6mm <br> To= 298K <br> \\( \\rho \\) = 0.008 g/mm<sup>3</sup> <br> C= 0.5107896 (J/g K<sup>-1</sup> ) <br> q= 1589.92 J/s <br> v= 2 mm/s",
+      "answers": {
+        "a": "1040K",
+        "b": "980K",
+        "c": "1073K",
+        "d": "1055K"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+]
+}
+  
