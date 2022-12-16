@@ -8,8 +8,8 @@ LinkedIn: https://in.linkedin.com/in/akraonandula/
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Principles of Shielded Metal Arc Welding</title>
+  <head>
+    <title>Principles of Gas Welding and Gas Cutting Processes</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,10 @@ LinkedIn: https://in.linkedin.com/in/akraonandula/
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/adik.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     
 </head>
 <body>
@@ -41,16 +44,16 @@ LinkedIn: https://in.linkedin.com/in/akraonandula/
 
             </div>
             <div class="col-md-6">
-                <p class="h1"> <b> Study and design of Weld's joints </b> </p>
+                <p class="h1"> <b> Principles of Gas Welding and Gas Cutting Processes </b> </p>
             </div>
             <div class="col-md-3">
 
             </div>
         </div>
-        <hr>  
+        <hr>
         <div class="d-flex p-1 text-primary">
           <div class="p-1" > <p class="h4"><a href="../index.html"> <span class="LN"> <b> Welding Lab </b></span> --> </a></p></div>
-          <div class="p-1"> <p class="h4"><a href="./index.html"> <span class="ExpN"> <b> Principles of Shielded Metal Arc Welding </b> </span> </a></p></div>
+          <div class="p-1"> <p class="h4"><a href="./index.html"> <span class="ExpN"> <b> Principles of Gas Welding and Gas Cutting Processes </b> </span> </a></p></div>
         </div>
     </div>
     
@@ -59,50 +62,62 @@ LinkedIn: https://in.linkedin.com/in/akraonandula/
 
             <ul class="nav nav-pills nav-justified">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Introduction</a>
+                  <a class="nav-link" href="./index.html">Introduction</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="aim.html">Objective</a>
+                  <a class="nav-link" href="./aim.html">Objective</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="prequiz.html">Pre Quiz</a>
+                  <a class="nav-link" href="./prequiz.html">Pre Quiz</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="theory.html">Theory</a>
+                  <a class="nav-link" href="./theory.html">Theory</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./procedure.html">Procedure</a>
+                  <a class="nav-link active" href="./procedure.html">Procedure</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./simulation/index.html">Simulation</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="postquiz.html">Post Quiz</a>
+                  <a class="nav-link" href="./postquiz.html">Post Quiz</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="feedback.html">Feedback</a>
+                    <a class="nav-link" href="./feedback.html">Feedback</a>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="references.html">References</a>
+                    <a class="nav-link" href="./references.html">References</a>
                   </li>
 
               </ul>
-
         </div>
-        
     </div>
+
     <div class="container p-3 my-5 text-dark text-left border">
       <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10"></div>
-        <div class="col-md-1"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <!--- Start your text here  -->
+
+            <p class="text-center"> <h3 class=" my-5 text-primary"> Instructions: </h3>
+              <ol id="inst">
+                <li class="h5 text-secondary"> Before starting the process read the instructions completely</li>
+                <li>Choose the <strong> Arc Voltage (in Volts) </strong> of any Real Value between <strong> 15 </strong> and <strong>21</strong></li>
+                <li>Choose the <strong> Arc Speed (in mm/min) </strong> of any Real Value between <strong> 0.15 </strong> and <strong>0.5</strong></li>
+                <li>Choose the <strong> Arc Current (in Ampere) </strong> of any Real Value between <strong> 200 </strong> and <strong>250</strong></li>
+                <li>Choose the <strong> Stand off distance (in mm) </strong> of any Real Value between <strong> 2 </strong> and <strong>8</strong></li>
+                <li> Click on <strong>Submit</strong> button</li>
+                <li>Observe the plot and hover the mouse on plot to see the values at that instant</li>
+  
+              </ol>
+            </p> 
+        <!--- End of your content here  -->
+
+        </div>
+        <div class="col-md-2"></div>
+          
       </div>
-        
     </div>
-  </div>
-
-
-
 
     <div class="container p-3 my-5 text-primary text-center border">
       <div class="row">
@@ -110,7 +125,7 @@ LinkedIn: https://in.linkedin.com/in/akraonandula/
           <div class="row ce">
             <div class="col-sm-12">
               <p class="h5"><i> Copyright ©2022 <a href="http://vlabs.iitkgp.ac.in/vlt/">Virtual Labs IIT Kharagpur</a> </i><br><br>
-              <a href="../license/index.html" target="_blank"> Licensing Terms </a>
+              <a href="./license/index.html" target="_blank"> Licensing Terms </a>
             </p>
             </div>
           </div>
