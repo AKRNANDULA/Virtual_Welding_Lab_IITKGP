@@ -126,24 +126,113 @@ LinkedIn: https://in.linkedin.com/in/akraonandula/
               <div class="tab-content"><br>
                   <div id="Strt" class="container p-3 tab-pane fade "><br>
                       <div class="row border border-3"><br>
-                          <div class="col-sm-6 p-3 border border-3"><br>
+                          <div class="col p-3 border border-3"><br>
                               <div class="h3"> <strong> Type of Operation : </strong></div><br>
                               <ul class="nav nav-pills nav-justified " role="tablist"> 
                                   <div class="col">
-                                      <li class="nav-item nav-link p-3 rounded border border-5"  data-bs-toggle="tab" onclick="adiwe2(1);">
+                                      <li class="nav-item nav-link p-3 rounded border border-5" href="#weld" data-bs-toggle="tab" onclick="adiwe3(1);">
                                            <span class="h3"> Welding </span>
-                                      </li> 
-                                      <li class="nav-item nav-link p-3 rounded border border-5 float-right"  data-bs-toggle="tab" onclick="adiwe2(2);">
+                                      </li>
+                                  </div>&nbsp;&nbsp;
+                                  <div class="col">
+                                      <li class="nav-item nav-link p-3 rounded border border-5 float-right" href="#cut" data-bs-toggle="tab" onclick="adiwe3(2);">
                                           <span class="h3"> Cutting </span>
-                                      </li><br> 
+                                      </li>
                                   </div>
                               </ul>
                           </div>
-                          <div class="col-sm-6 p-3"><br>
-                                 
-                                  <br>
-                          </div>
                       </div>
+                      <div class="row border border-3"><br>
+                          <div id= "weld" class=" tab-content col p-3 border border-3 fade"><br>
+                            <div class="h3"> <strong> Type of Joint: </strong></div><br>
+                            <ul class="nav nav-pills nav-justified " role="tablist"> 
+                              <div class="col"></div>
+                                <div class="col">
+                                    <li class="nav-item nav-link p-3 border border-5" href="#bw" data-bs-toggle="tab">
+                                         <span class="h3"> Butt Joint </span>
+                                    </li>
+                                </div>
+                                <div class="col"></div>
+                            </ul>
+                            <div id="bw" class="tab-content fade row"><br>
+                                <div class="col-md-12 p-3"><br>
+                                    <div class="row border border-3 p-3">
+                                        <div class="h3"> <strong> Type of Material: </strong></div><br>
+                                        <ul class="nav nav-pills nav-justified " role="tablist">   
+                                            <div class="col">
+                                              <li class="nav-item nav-link p-2 rounded border border-5" href="#" data-bs-toggle="tab" onclick="c1=1;">
+                                                  <span class="h3"> Mild Steel </span>
+                                              </li>
+                                            </div>&nbsp;&nbsp;
+                                            <div class="col">
+                                              <li class="nav-item nav-link p-2 rounded border border-5 float-right" href="#" data-bs-toggle="tab" onclick="c1=2;">
+                                                <span class="h3"> High Carbon Steel </span>
+                                              </li> 
+                                            </div>&nbsp;&nbsp;
+                                            <div class="col">
+                                              <li class="nav-item nav-link p-2 rounded border border-5 float-right" href="#" data-bs-toggle="tab" onclick="c1=3;">
+                                                  <span class="h3"> Brass </span>
+                                              </li>
+                                            </div>
+                                        </ul>
+                                      </div><br>
+                                      <div class="row border border-3 p-3">
+                                        <div class="h3"> <strong> Type of flame: </strong></div><br>
+                                        <ul class="nav nav-pills nav-justified " role="tablist"> 
+                                            <div class="col">
+                                              <li class="nav-item nav-link p-2 rounded border border-5" href="#" data-bs-toggle="tab" onclick="c2=1;">
+                                                  <span class="h3"> Carburizing </span>
+                                              </li>
+                                            </div>&nbsp;&nbsp;
+                                            <div class="col">
+                                              <li class="nav-item nav-link p-2 rounded border border-5 rounded rounded-3" href="#" data-bs-toggle="tab" onclick="c2=2;">
+                                                <span class="h3"> Neutral </span>
+                                              </li> 
+                                            </div>&nbsp;&nbsp;
+                                            <div class="col">
+                                              <li class="nav-item nav-link p-2 rounded border border-5 " href="#" data-bs-toggle="tab" onclick="c2=3;">
+                                                  <span class="h3"> Oxidising </span>
+                                              </li>
+                                            </div>
+                                        </ul>
+                                      </div><br>
+                                    <div class="row border border-3 p-3">
+                                      <div class="col-sm-1"></div>
+                                      <div class="col-sm-10">                        
+                                        <ul class="nav nav-pills nav-justified " role="tablist">
+                                          <li class="nav-item bg-success">
+                                              <a class="nav-link" data-bs-toggle="tab" href="#sw" onclick="adiwe3(3);"><span class=" h3 text-dark"> Start Welding </span></a>
+                                          </li> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                          <li class="nav-item bg-danger">
+                                              <a class="nav-link" data-bs-toggle="tab" href="#" onclick="window.location.reload();"><span class=" h3 text-dark"> Stop Welding </span></a>
+                                          </li>
+                                          </ul><br>     
+                                      </div>
+                                      <div class="col-sm-1"></div>
+                                    </div><br>
+                                    <div id="sw" class="row border border-3 p-1 fade">
+                                      <div class="col-md-10 border border-3 p-2">
+                                        <div id="sid">
+                                            <div id ="d1" class="border border-3 p-3" >A</div>
+                                            <div id ="d2">B</div>
+                                            <div id ="d3">C</div>
+                                            <div id ="d4">D</div>
+                                            <div id ="d5">E</div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-1 border border-3">
+                                        <img class="img img-fluid" src="./images/iitkgp.png" alt="Acetylene Cylinder">
+                                      </div>
+                                      <div class="col-md-1 border border-3">
+                                        <img class="img img-fluid" src="./images/iitkgp.png" alt="Oxyzen (O2) Cylinder">
+                                      </div>
+                                    </div>
+                                <br>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      
                   </div>
               </div>
           </div>

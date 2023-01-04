@@ -25,27 +25,29 @@ function adiwe4(a){
         $("#grph").hide();    
         ch=0;
     }
-    else if(a==3){
-        alert("Choose any Real Value between 15 and 21");
-    }
-    else if(a==4){
-        alert("Choose any Real Value between 0.15 and 0.5");
-    }
-    else if(a==5){
-        alert("Choose any Real Value between 200 and 250");
-    }
-    else if(a==6){
-        alert("Choose any Real Value between 2 and 8");
-    }
     else
     {
         $("#grph").show();
         if(a==1){
-
-            adiplt(Number($("#av").val()),Number($("#as").val()),Number($("#ac").val()),Number($("#ad").val()));
+            //adiplt(Number($("#av").val()),Number($("#as").val()),Number($("#ac").val()),Number($("#ad").val()));
+            if(Number($("#av").val())>15 && Number($("#av").val())<22 || Number($("#as").val())>0.2 && Number($("#as").val())<0.6 || Number($("#ad").val())>319 && Number($("#ad").val())<401 ){
+                adiplt(Number($("#av").val()),Number($("#as").val()),Number($("#ac").val()),Number(2));
+            }
+            else
+            {
+                $("#grph").hide();
+                $('#inst').show();
+                $('#av').val('');
+                $('#ad').val('');    
+                $('#ac').val('');
+                $('#as').val('');
+            ch=0;
+                alert("Read the instructions and enter the right values");
+            }
         }
         else if(a==2){
             $("#grph").hide();
+            $('#inst').show();
             $('#av').val('');
             $('#ad').val('');    
             $('#ac').val('');
@@ -100,6 +102,7 @@ function adiplt(v, s, i, h){
   bw = 12.202+(i*0.0746)+(0.2196*h)+(0.0436*v)-(48.517*s);
   bh = -1.059+(0.016*i)+(0.1296*h)+(0.028*v)-(9.033*s);
   bp = 16.403-(0.002*i)-(0.173*h)-(0.112*v)-(9.287*s);
+ 
   x_0 = 40;
   y_0 = 40;
   xa = rng((x_0-(bw/2)), (x_0+(bw/2)), 1000);
@@ -129,43 +132,43 @@ var g1 = {
         x: xa,
         y: y_up,
         type: 'scatter',
-        name: 'xy_up'
+        name: 'Reinforcement Zone'
     };
 var g2 = {
         x: xa,
         y: y_down,
         type: 'scatter',
-        name: 'xy_down'
+        name: 'Penetration Zone'
     };
 var g3 = {
         x: x1,
         y: y1,
         type: 'scatter',
-        name: 'x1y1'
+        showlegend:false
     };
 var g4 = {
         x: x2,
         y: y2,
         type: 'scatter',
-        name: 'x2y2'
+        showlegend:false
     };
 var g5 = {
         x: x3,
         y: y3,
         type: 'scatter',
-        name: 'x3y3'
+        showlegend:false
     };
 var g6 = {
         x: x4,
         y: y4,
         type: 'scatter',
-        name: 'x4y4'
+        showlegend:false
     };
     
 var gda = [g1,g2,g3,g4,g5,g6];
 
     var gr = document.getElementById('grph');
-    var layout={title: 'Principles of Shielded Metal Arc Welding',showlegend: true,
+    var layout={title: 'Weld Bead Geometry',showlegend: true,
     legend: {
       x: 1,
       xanchor: 'right',
@@ -177,7 +180,7 @@ var gda = [g1,g2,g3,g4,g5,g6];
         color: 'black'
         },
     xaxis: {
-        title:'X axis -->',
+        title:'Plate Width (mm)',
         showticklabels: true,
         autotick: true,
         showgrid: true,
@@ -193,7 +196,7 @@ var gda = [g1,g2,g3,g4,g5,g6];
         range:[10,70]
          },
     yaxis: {
-        title:'Y axis -->',
+        title:'Plate Thickness (mm)',
         showticklabels: true,
         autotick: true,
         showgrid: true,
